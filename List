@@ -1,0 +1,9 @@
+##NOTE - Regex patterns in powershell are in single quotations (ex. $var | Select-String -Pattern '{12345678-1234-1234-1234-123456789012}')
+##Regex for uninstall strings within Registry Keys
+^[{][a-zA-Z0-9_]{8}[-][a-zA-Z0-9_]{4}[-][a-zA-Z0-9_]{4}[-][a-zA-Z0-9_]{4}[-][a-zA-Z0-9_]{12}[}]$
+
+##Regex for mm/dd/yyyy
+^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d$
+
+##Regex for dd-mm-yyyy
+^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d$
